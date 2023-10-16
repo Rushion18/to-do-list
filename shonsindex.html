@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
+    <title>Simple To-Do List</title>
     <link rel="stylesheet" href="shonstyle.css">
+    
 </head>
-
 <body>
-
-    <div id="todo-list">
+    
+    <div id="todoList">
         <h2>To-Do List</h2>
-        <input type="text" id="task" placeholder="Add a new task">
-        <button id="addTask">Add</button>
-        <ul id="tasks"></ul>
+        <input type="text" id="taskInput" placeholder="Add a new task">
+        <button onclick="addTask()">Add Task</button>
+        <button onclick="markAllAsComplete()">Mark All as Complete</button>
+        <button onclick="deleteAllTasks()">Delete All Tasks</button>
+        <div id="tasks"></div>
     </div>
-
-    <script src="shonscript.js"></script>
-
+    
+   <script src="shonscript.js"></script>
 </body>
 </html>
